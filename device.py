@@ -1,0 +1,20 @@
+from device_detector import DeviceDetector
+ua = 'Mozilla/5.0 (Linux; Android 4.3; C5502 Build/10.4.1.B.0.101) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.136 Mobile Safari/537.36'
+
+device = DeviceDetector(ua)
+isBot = device.is_bot()
+osName = device.os_name()
+osVersion = device.os_version()
+engine = device.engine()
+brandName = device.device_brand_name()
+deviceBrand = device.device_brand()
+deviceModel = device.device_model()
+deviceType = device.device_type()
+print("IS BOT -> ", isBot)
+print("OS NAME -> ", osName)
+print("OS VERSION -> ", osVersion)
+print("ENGINE -> ", engine)
+print("BRAND NAME -> ", brandName)
+print("DEVICE BRAND -> ", deviceBrand)
+print("DEVICE MODEL -> ", deviceModel)
+print("DEVICE TYPE", deviceType)
