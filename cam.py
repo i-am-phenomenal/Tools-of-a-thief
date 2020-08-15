@@ -4,6 +4,19 @@ import os
 import time
 import schedule
 
+def makeFolderIfDoesNotExist(makeFolderFlag):
+    if makeFolderFlag: 
+        dirPath = os.getcwd() + "/images"
+        if os.path.isdir(dirPath): 
+            return
+        else: 
+            try:
+                os.mkdir(os.getcwd() + "/images")
+            except Exception as e: 
+                print(e)
+    else: 
+        return
+
 def getImagesCount(): 
     DIR = os.getcwd() + "/images"    
     count = len([name for name in os.listdir(DIR) if os.path.isfile(os.path.join(DIR, name))]) + 1
@@ -22,7 +35,7 @@ def launchWebcamAndTakeScreenshot():
     if vc.isOpened(): # try to get the first frame
         rval, frame = vc.read()
         saveImage(frame)
-        print("TOOK SCREENSHOT ")
+        print("TOOK SCREENSHOT !")
     else:
         rval = False
 
@@ -38,6 +51,7 @@ def launchWebcamAndTakeScreenshot():
 """ 
     Current times is for 2 seconds. Hence, the program will wake up after every 2 seconds and take a screenshot.
 """
+makeFolderIfDoesNotExist(False)
 schedule.every(2).seconds.do(launchWebcamAndTakeScreenshot)
 while True: 
     schedule.run_pending()
