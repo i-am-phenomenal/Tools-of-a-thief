@@ -1,0 +1,24 @@
+﻿  Building 'KMDFDriver' with toolset 'WindowsKernelModeDriver10.0' and the 'Universal' target platform.
+  Stamping x64\Debug\KMDFDriver.inf
+  Stamping [Version] section with DriverVer=08/17/2020,14.52.35.841
+C:\Code\tools_of_a_thief\KMDFDriver\KMDFDriver.inf(5-5): warning 1324: [Version] section should specify PnpLockdown=1.
+  BasicDriver.c
+  KMDFDriver.vcxproj -> C:\Code\tools_of_a_thief\KMDFDriver\x64\Debug\KMDFDriver.sys
+  Done Adding Additional Store
+  Successfully signed: C:\Code\tools_of_a_thief\KMDFDriver\x64\Debug\KMDFDriver.sys
+  
+  Driver is 'Universal'.
+  ........................
+  Signability test complete.
+  
+  Errors:
+  None
+  
+  Warnings:
+  None
+  
+  Catalog generation complete.
+  C:\Code\tools_of_a_thief\KMDFDriver\x64\Debug\KMDFDriver\kmdfdriver.cat
+  Done Adding Additional Store
+  Successfully signed: C:\Code\tools_of_a_thief\KMDFDriver\x64\Debug\KMDFDriver\kmdfdriver.cat
+  

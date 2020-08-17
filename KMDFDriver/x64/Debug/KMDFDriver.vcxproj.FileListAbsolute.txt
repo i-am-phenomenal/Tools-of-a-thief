@@ -1,0 +1,2 @@
+C:\Code\tools_of_a_thief\KMDFDriver\x64\Debug\KMDFDriver.sys
+C:\Code\tools_of_a_thief\KMDFDriver\x64\Debug\KMDFDriver.pdb
