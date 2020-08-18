@@ -35,7 +35,7 @@ def launchWebcamAndTakeScreenshot():
     if vc.isOpened(): # try to get the first frame
         rval, frame = vc.read()
         saveImage(frame)
-        print("TOOK SCREENSHOT !")
+        print("TESTING  !")
     else:
         rval = False
 
@@ -56,3 +56,7 @@ schedule.every(2).seconds.do(launchWebcamAndTakeScreenshot)
 while True: 
     schedule.run_pending()
     time.sleep(1)
+
+
+# Converted to .exe using this command 
+# pyinstaller --onefile cam.py
